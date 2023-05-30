@@ -1,0 +1,100 @@
+# Raport:  2023-05-18 12:12:54.025717
+              precision    recall  f1-score   support
+
+           1       1.00      1.00      1.00        10
+           2       0.82      0.90      0.86        10
+           3       0.80      0.80      0.80        10
+           4       0.91      1.00      0.95        10
+           5       1.00      0.90      0.95        10
+           6       1.00      0.90      0.95        10
+
+    accuracy                           0.92        60
+   macro avg       0.92      0.92      0.92        60
+weighted avg       0.92      0.92      0.92        60
+
+Accuracy threshold:	0.91
+Balanced Accuracy:	0.9166666666666669
+Matthews Correlation Coefficient:	0.9006006006674454
+Confusion Matrix:
+         pred: 1  pred: 2  pred: 3  pred: 4  pred: 5  pred: 6
+true: 1       10        0        0        0        0        0
+true: 2        0        9        1        0        0        0
+true: 3        0        2        8        0        0        0
+true: 4        0        0        0       10        0        0
+true: 5        0        0        0        1        9        0
+true: 6        0        0        1        0        0        9
+# Raport:  2023-05-18 12:36:13.031254
+              precision    recall  f1-score   support
+
+           1       1.00      0.95      0.98        21
+           2       0.86      0.95      0.90        20
+           3       0.90      0.90      0.90        20
+           4       0.95      0.95      0.95        20
+           5       0.90      0.90      0.90        20
+           6       0.95      0.90      0.92        20
+
+    accuracy                           0.93       121
+   macro avg       0.93      0.93      0.93       121
+weighted avg       0.93      0.93      0.93       121
+
+Accuracy threshold:	0.91
+Balanced Accuracy:	0.9253968253968256
+Matthews Correlation Coefficient:	0.9109690235582613
+Confusion Matrix:
+         pred: 1  pred: 2  pred: 3  pred: 4  pred: 5  pred: 6
+true: 1       20        0        0        0        1        0
+true: 2        0       19        1        0        0        0
+true: 3        0        2       18        0        0        0
+true: 4        0        0        0       19        0        1
+true: 5        0        1        0        1       18        0
+true: 6        0        0        1        0        1       18
+# Raport:  2023-05-18 13:03:48.172565
+              precision    recall  f1-score   support
+
+           1       0.97      0.97      0.97        31
+           2       0.90      0.93      0.92        30
+           3       0.85      0.77      0.81        30
+           4       0.81      0.83      0.82        30
+           5       0.77      0.80      0.79        30
+           6       0.90      0.90      0.90        30
+
+    accuracy                           0.87       181
+   macro avg       0.87      0.87      0.87       181
+weighted avg       0.87      0.87      0.87       181
+
+Accuracy threshold:	0.91
+Balanced Accuracy:	0.8668458781362008
+Matthews Correlation Coefficient:	0.8410639904253535
+Confusion Matrix:
+         pred: 1  pred: 2  pred: 3  pred: 4  pred: 5  pred: 6
+true: 1       30        0        0        0        1        0
+true: 2        0       28        2        0        0        0
+true: 3        0        2       23        2        2        1
+true: 4        0        0        1       25        2        2
+true: 5        1        1        0        4       24        0
+true: 6        0        0        1        0        2       27
+# Raport:  2023-05-18 13:19:25.030387
+              precision    recall  f1-score   support
+
+           1       0.93      0.95      0.94        41
+           2       0.82      0.80      0.81        40
+           3       0.68      0.70      0.69        40
+           4       0.89      0.60      0.72        40
+           5       0.73      0.90      0.81        40
+           6       0.81      0.88      0.84        40
+
+    accuracy                           0.80       241
+   macro avg       0.81      0.80      0.80       241
+weighted avg       0.81      0.80      0.80       241
+
+Accuracy threshold:	0.91
+Balanced Accuracy:	0.804369918699187
+Matthews Correlation Coefficient:	0.7680479536538427
+Confusion Matrix:
+         pred: 1  pred: 2  pred: 3  pred: 4  pred: 5  pred: 6
+true: 1       39        0        0        0        2        0
+true: 2        0       32        4        0        2        2
+true: 3        1        7       28        1        1        2
+true: 4        1        0        6       24        6        3
+true: 5        1        0        0        2       36        1
+true: 6        0        0        3        0        2       35
