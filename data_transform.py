@@ -43,11 +43,13 @@ def data_extract() -> list:
             # df=df.drop([1, 3,5,7,9,11,13,14], axis=1)  
             df=df.replace(',', '.',regex=True)
             df = df.astype(float)
+            df = df.iloc[:, :16]
             # df.columns=[0,1,2,3,4,5,6,7]
             df['time_s']=df.index*0.001 + 0.001
             df['label']=idx
             label.append(idx)
             li.append(df)
+    print("Wczytano dane")
     return li,label
 
 def wavelet_transform(li:list) -> list:
@@ -61,7 +63,7 @@ def wavelet_transform(li:list) -> list:
     # wavelet = ['bior1.1','bior1.5','bior2.4','bior3.5','bior6.8','coif1','coif2','coif4',
     #            'coif14','coif15','db1','db12','db13','db14','db15','db16','db29','db34','db35'
     #            ,'db38','haar','rbio1.1','rbio2.2','rbio2.4','rbio2.8','rbio3.5','rbio3.9','rbio6.8','sym6','sym8','sym10','sym18','sym19']
-    wavelet=['bior1.1','bior1.5']
+    wavelet=['bior1.1']
 
     # cA2, cD2, cD1 = pywt.wavedec(x, db1, mode='constant', level=2)
     def wtf(X):
@@ -75,8 +77,8 @@ def wavelet_transform(li:list) -> list:
     # create the pipeline object that includes wavelet transform and scaling steps
     pipeline = Pipeline([
         # ('scaler', MinMaxScaler(feature_range=(0, 1))),
-        ('wavelet_transform', FunctionTransformer(wtf)),
-        ('scaler2', MinMaxScaler(feature_range=(0, 1)))
+        ('wavelet_transform', FunctionTransformer(wtf))
+        # ('scaler2', MinMaxScaler(feature_range=(0, 1)))
         # ('feature_selection', SelectKBest(score_func=f_regression, k=10)),
         
     ])
